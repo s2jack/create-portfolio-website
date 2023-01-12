@@ -3,40 +3,42 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <section>
-      <nav id="navbar">
-        <div id="logo">
-          <img src="images/image_geometry_1.svg" width="111" height="74">
+    <main>
+      <section>
+        <header id="toolbar">
+          <a href="index.html" id="logo">
+            <img src="images/image_geometry_1.svg" width="111" height="74">
+          </a>
+          <nav id="icmenu">
+            <img src="images/ic_menu.svg" width="40" height="28">
+          </nav>
+        </header>
+      </section>
+      <section>
+        <div class="headline">
+          <h1 id="name" class="text">
+            Mehmet Selçuk
+            Güler
+          </h1>
+          <p id="message" class="text">
+            Hello! I am a software developer!
+            I can help you build a product,
+            feature or website. Take a look of my works.
+            If you like what you see and have a project you need coded, 
+            don’t hesitate and contact me.
+          </p>
+          <div>
+            <input id="button" type="image" src="images/button_enable.png"
+            onmouseover="this.src='images/button_onhover.png'"
+            onmouseout="this.src='images/button_enable.png'">
+          </div>
         </div>
-        <div id="icmenu">
-          <img src="images/ic_menu.svg" width="40" height="28">
+      </section>
+      <section>
+        <div id="seperator01">
+          <img src="images/image_geometry_2.png" width="100%">
         </div>
-      </nav>
-    </section>
-    <section>
-      <div class="headline">
-        <div id="name">
-          Mehmet Selçuk
-          Güler
-        </div>
-        <div id="message">
-          Hello! I am a software developer!
-          I can help you build a product,
-          feature or website. Taka a look of my works.
-          If you like what you see and have a project you need coded, 
-          don’t hesitate and contact me.
-        </div>
-        <div>
-          <input id="button" type="image" src="images/button_enable.png"
-          onmouseover="this.src='images/button_onhover.png'"
-          onmouseout="this.src='images/button_enable.png'">
-        </div>
-      </div>
-    </section>
-    <section>
-      <div id="seperator01">
-        <img src="images/image_geometry_2.png" width="66%">
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>
