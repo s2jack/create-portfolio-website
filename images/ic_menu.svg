@@ -1,0 +1,21 @@
+<svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_1_9)">
+<mask id="path-1-inside-1_1_9" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H24V2H4V0ZM4 6.00002H24V8.00002H4V6.00002ZM24 12H4V14H24V12Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H24V2H4V0ZM4 6.00002H24V8.00002H4V6.00002ZM24 12H4V14H24V12Z" fill="#1A2236"/>
+<path d="M24 0H25V-1H24V0ZM4 0V-1H3V0H4ZM24 2V3H25V2H24ZM4 2H3V3H4V2ZM24 6.00002H25V5.00002H24V6.00002ZM4 6.00002V5.00002H3V6.00002H4ZM24 8.00002V9.00002H25V8.00002H24ZM4 8.00002H3V9.00002H4V8.00002ZM4 12V11H3V12H4ZM24 12H25V11H24V12ZM4 14H3V15H4V14ZM24 14V15H25V14H24ZM24 -1H4V1H24V-1ZM25 2V0H23V2H25ZM4 3H24V1H4V3ZM3 0V2H5V0H3ZM24 5.00002H4V7.00002H24V5.00002ZM25 8.00002V6.00002H23V8.00002H25ZM4 9.00002H24V7.00002H4V9.00002ZM3 6.00002V8.00002H5V6.00002H3ZM4 13H24V11H4V13ZM5 14V12H3V14H5ZM24 13H4V15H24V13ZM23 12V14H25V12H23Z" fill="black" mask="url(#path-1-inside-1_1_9)"/>
+</g>
+<defs>
+<filter id="filter0_d_1_9" x="0" y="0" width="28" height="22" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_9"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_9" result="shape"/>
+</filter>
+</defs>
+</svg>
