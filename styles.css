@@ -8,45 +8,45 @@
   src: url(fonts/Poppins-Regular.ttf);
 }
 
-body {
-  margin-left: 0;
-  margin-top: 0;
+html body {
+  margin: 0;
+  padding: 0;
 }
 
 main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #toolbar {
-  height: 8%;
+  height: 10em;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-#seperator01 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
+#shape01 {
   padding-top: 5em;
 }
 
+#menubutton {
+  margin-top: 10px;
+  padding-right: 1em;
+}
+
 .headline {
-  margin-left: 9%;
   display: flex;
-  width: 83%;
-  height: 40%;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 #name {
   padding-top: 5%;
   font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
-  font-size: 3.8em;
+  font-size: 8em;
   color: #1a2236;
 }
 
@@ -54,8 +54,24 @@ main {
   font-size: 1.5em;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   color: #1a2236;
+  padding-bottom: 4em;
+  margin-top: -10px;
 }
 
 .text {
-  text-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
+  text-shadow: 0 12px 8px rgb(0, 0, 0, 0.25);
+}
+
+#button {
+  width: 18em;
+  height: 3em;
+  background-color: #1a2236;
+  color: white;
+  font-size: 48px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+#shape02 {
+  width: 980px;
+  padding-top: 5em;
 }
