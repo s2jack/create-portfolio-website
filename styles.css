@@ -1,5 +1,26 @@
-#navbar {
-  height: 13%;
+@font-face {
+  font-family: Playfair-Display-Font;
+  src: url(fonts/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(fonts/Poppins-Regular.ttf);
+}
+
+
+body {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#toolbar {
+  height: 8%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -14,10 +35,10 @@
 }
 
 .headline {
-  margin-left: 2.4rem;
+  margin-left: 9%;
   display: flex;
   width: 83%;
-  height: 55%;
+  height: 40%;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -25,11 +46,17 @@
 
 #name {
   padding-top: 5%;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 3.4em;
+  font-family: Playfair-Display-Font;
+  font-size: 3.8em;
+  color: #1A2236;
 }
 
 #message {
   font-size: 1.5em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Poppins;
+  color: #1A2236;
+}
+
+.text {
+  text-shadow: 0px 4px 4px rgb(0,0,0,0.25);
 }
