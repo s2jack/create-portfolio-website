@@ -145,6 +145,7 @@ ul.techtags {
   height: 4em;
 }
 
+
 li.techtag {
   font-size: 2.3em;
   font-family: Poppins-light, Arial, Helvetica, sans-serif;
@@ -207,51 +208,37 @@ li.techtag {
 }
 
 #techskills {
-  margin-top: 5em;
-  min-height: 160vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  margin-top: 10em;
+  width: 100%;
+  height: 175em;
 }
 
 .techbox {
-  width: 90%;
-  height: 52em;
-  box-sizing: border-box;
-  overflow: hidden;
+  margin-left: 5%;
+  background-repeat: no-repeat;
+  min-height: 55em;
+  min-width: 90%;
+  background-size: 55em;
 }
 
 #languages {
-  background: #1c528a;
+  background-image: url(images/blue_bg.png);
 }
 
 #frameworks {
-  background: #e2505c;
+  background-image: url(images/red_bg.png);
 }
 
 #skills {
-  background: #febf52;
-}
-
-#langicon {
-  margin-left: 35.8em;
-  margin-top: -1em;
-}
-
-#frameicon {
-  margin-left: 37em;
-  margin-top: 0;
-}
-
-#skillicon {
-  margin-left: 37em;
-  margin-top: -1em;
+  background-image: url(images/yellow_bg.png);
 }
 
 .ulheader {
-  margin-top: 2.7em;
-  margin-left: 2.7em;
+  padding-top: 2.5em;
+  padding-left: 2.6em;
   color: white;
   font-size: 4em;
   font-family: Poppins-extrabold, Arial, Helvetica, sans-serif;
@@ -270,7 +257,7 @@ li::before {
 }
 
 #contactbg {
-  margin-top: 7em;
+  margin-top: 15em;
   width: 100%;
   height: 300px;
   background-color: #1a2236;
