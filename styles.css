@@ -162,7 +162,7 @@ li.techtag {
   margin: 0 0 3em 3.2em;
   width: 33.6em;
   height: 8.6em;
-  background-image: url(/images/Button_prdetails.png);
+  background-image: url(images/Button_prdetails.png);
 }
 
 #prdetailbutton:hover {
@@ -170,7 +170,7 @@ li.techtag {
   width: 33.6em;
   height: 9em;
   margin-bottom: 4.7em;
-  background-image: url(/images/Button_prdetails_hovered.png);
+  background-image: url(images/Button_prdetails_hovered.png);
 }
 
 #pr02 {
