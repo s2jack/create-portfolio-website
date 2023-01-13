@@ -161,7 +161,7 @@ main {
 .tags {
   padding-left: 3.5em;
   margin-top: 2.5em;
-  width: 35vh;
+  width: 65vw;
   display: flex;
   justify-content: space-between;
 }
