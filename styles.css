@@ -10,17 +10,17 @@
 
 @font-face {
   font-family: Poppins-light;
-  src: url(fonts/Poppins-Light.ttf)
+  src: url(fonts/Poppins-Light.ttf);
 }
 
 @font-face {
   font-family: Poppins-extrabold;
-  src: url(fonts/Poppins-ExtraBold.ttf)
+  src: url(fonts/Poppins-ExtraBold.ttf);
 }
 
 @font-face {
   font-family: Poppins-semibold;
-  src: url(fonts/Poppins-SemiBold.ttf)
+  src: url(fonts/Poppins-SemiBold.ttf);
 }
 
 html body {
@@ -187,6 +187,7 @@ main {
   display: flex;
   flex-direction: column;
 }
+
 #pr03 {
   grid-row: 1/2;
   display: flex;
@@ -213,7 +214,6 @@ main {
   height: 9.5em;
   background-image: url(images/Button_getmycv_hovered.png);
 }
-
 
 #techskills {
   margin-top: 5em;
@@ -257,7 +257,7 @@ main {
   margin-left: 37em;
   margin-top: -1em;
 }
-s
+
 .ulheader {
   margin-top: 2.7em;
   margin-left: 2em;
