@@ -135,43 +135,33 @@ main {
   margin-top: -0.5em;
 }
 
-.tag {
-  color: #1a2236;
-  font-size: 2.1em;
-  font-family: Poppins-light, Arial, Helvetica, sans-serif;
-  text-align: center;
-  padding: 5px 35px;
-  margin-bottom: 2.2em;
-}
-
-.box1 {
-  background: #98dede;
-  box-sizing: border-box;
-}
-
-.box2 {
-  background: #98dede;
-  box-sizing: border-box;
-}
-
-.box3 {
-  background: #98dede;
-  box-sizing: border-box;
-}
-
-.tags {
-  padding-left: 3.5em;
-  margin-top: -0.5em;
-  width: 37em;
+ul.techtags {
   display: flex;
   justify-content: space-between;
+  list-style-type: none;
+  width: 65%;
+  margin: -3.5em 0 1em 3.5em;
+  padding: 0;
+  height: 4em;
+}
+
+
+li.techtag {
+  font-size: 2.3em;
+  font-family: Poppins-light, Arial, Helvetica, sans-serif;
+  float: left;
+  display: block;
+  color: #1a2236;
+  text-align: center;
+  padding: 5px 40px 0 68px;
+  text-decoration: none;
+  background-color: #98dede;
 }
 
 #prdetailbutton {
-  margin-left: 3.2em;
+  margin: 0 0 3em 3.2em;
   width: 33.6em;
-  height: 10em;
-  margin-bottom: 3.7em;
+  height: 8.6em;
   background-image: url(/images/Button_prdetails.png);
 }
 
