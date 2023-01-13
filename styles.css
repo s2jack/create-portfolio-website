@@ -145,6 +145,7 @@ ul.techtags {
   height: 4em;
 }
 
+
 li.techtag {
   font-size: 2.3em;
   font-family: Poppins-light, Arial, Helvetica, sans-serif;
@@ -250,7 +251,7 @@ li.techtag {
 
 .ulheader {
   margin-top: 2.7em;
-  margin-left: 2em;
+  margin-left: 2.7em;
   color: white;
   font-size: 4em;
   font-family: Poppins-extrabold, Arial, Helvetica, sans-serif;
@@ -258,7 +259,7 @@ li.techtag {
 
 li::before {
   content: "";
-  margin-right: -2rem;
+  margin-right: -0.5rem;
 }
 
 .article {
