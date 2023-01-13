@@ -266,7 +266,7 @@ main {
   font-family: Poppins-extrabold, Arial, Helvetica, sans-serif;
 }
 
-li:before {
+li::before {
   content: "";
   margin-right: -2rem;
 }
