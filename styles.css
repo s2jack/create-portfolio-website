@@ -140,7 +140,7 @@ ul.techtags {
   justify-content: space-between;
   list-style-type: none;
   width: 65%;
-  margin: -3.5em 0 1em 3.5em;
+  margin: -3.5em 0 1em 2em;
   padding: 0;
   height: 4em;
 }
@@ -152,7 +152,8 @@ li.techtag {
   display: block;
   color: #1a2236;
   text-align: center;
-  padding: 5px 40px 0 68px;
+  padding: 5px 45px 0 68px;
+  margin: 0 0 0 20px;
   text-decoration: none;
   background-color: #98dede;
 }
