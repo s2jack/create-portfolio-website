@@ -34,7 +34,9 @@ main {
   justify-content: center;
   align-items: center;
 }
-/*------------------HEADER---------------*/
+
+/* ------------------HEADER--------------- */
+
 #toolbar {
   height: 10em;
   width: 100%;
@@ -51,7 +53,9 @@ main {
   margin-top: 10px;
   padding-right: 1em;
 }
-/*------------------HOME PAGE---------------*/
+
+/* ------------------HOME PAGE--------------- */
+
 .headline {
   display: flex;
   flex-direction: column;
@@ -96,7 +100,9 @@ main {
   width: 980px;
   padding-top: 5em;
 }
-/*------------------PROJECT---------------*/
+
+/* ------------------PROJECT--------------- */
+
 .title {
   font-size: 10em;
   font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
@@ -326,8 +332,6 @@ textarea::placeholder {
   padding-left: 1em;
 }
 
-
-
 textarea {
   border: 1px solid #dfdfe0;
   border-radius: 5px;
@@ -336,13 +340,13 @@ textarea {
   height: 32em;
 }
 
-.btn-submit{
+.btn-submit {
   margin-top: 1em;
   font-size: 48px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: #fff;
+  border: 1px solid #fff;
   border-radius: 5px;
   background-color: #1a2236;
   box-sizing: border-box;
@@ -350,15 +354,15 @@ textarea {
   height: 3em;
 }
 
-.btn-submit:hover{
+.btn-submit:hover {
   margin-top: 1em;
   font-size: 48px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   border-radius: 5px;
   background-color: #b9b9b9;
-  color:#1a2236;
+  color: #1a2236;
   box-sizing: border-box;
   width: 18.5em;
   height: 3em;
