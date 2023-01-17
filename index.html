@@ -4,6 +4,7 @@
   </head>
   <body>
     <main>
+      <!----------------------- HEADER -------------------------->
         <header id="toolbar">
           <a href="index2.html" id="logolink">
             <img id="shape01"src="images/image_geometry_1.png" width="360" height="240">
@@ -12,6 +13,7 @@
             <img id="menubutton"src="images/ic_menu.png" width="90" height="63">
           </nav>
         </header>
+      <!----------------------- HOME PAGE -------------------------->
       <section>
         <div class="headline">
           <h1 id="name" class="text">
@@ -32,7 +34,8 @@
       <div>
         <img id="shape02" src="images/image_geometry_2.png" >
       </div>
-    </main> 
+    </main>
+    <!----------------------- PROJECTS & WORKS PAGE --------------------------> 
     <h2 class="title">
       Projects
     </h2>
@@ -78,6 +81,7 @@
             </div>
       </div>
     </section>
+    <!----------------------- ABOUT ME PAGE -------------------------->
     <h2 class="title">
       About
     </h2>
@@ -118,8 +122,9 @@
       </div>
     </div>
     </section>
-    <section>
-      <div class="contact-form">
+    <!----------------------- CONTACT PAGE -------------------------->
+    <section class="contact-page">
+      <div>
         <div id="contact-form-bg">
           <div id="contact-form-txt">
             <h3 id="form-header">Get Started</h3>
@@ -127,8 +132,23 @@
               adipiscing elit, sed do eiusmod tempor<br>
               incididunt ut labore et dolore magna.</p>
           </div>
+          <!-- modify this form HTML and place wherever you want your form -->
+          <form class="contact-form"
+          action="https://formspree.io/f/xeqwogzg"
+          method="POST"
+          >
+          <label for="name"></label>
+          <input class="st-input" type="text" name="name" placeholder="Your name" maxlength="30" required>
+          <label for="email"></label>
+          <input class="st-input" type="email" name="email" placeholder="Email address" required>
+          <label for="message"></label>
+          <textarea name="message" type="text" maxlength="500" placeholder="Add your message here..." required></textarea>
+          <!-- your other form fields go here -->
+          <button class="btn-submit" type="submit">Start collaboration</button>
+          </form>
         </div>
       </div>
+    <!----------------------- FOOTER -------------------------->
     </section>
     <section id="footer">
       <div id="footer-bg">
