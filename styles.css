@@ -274,3 +274,23 @@ li::before {
   display: flex;
   justify-content: space-around;
 }
+
+#contact-form-txt {
+  padding-left: 3em;
+  color: #1a2236;
+}
+
+#form-header {
+  margin-bottom: 0;
+  padding-top: 2em;
+  font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 160px;
+}
+
+#form-message {
+  padding-top: -15rem;
+  font-family: Poppins-semibold, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
