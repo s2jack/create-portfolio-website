@@ -326,6 +326,8 @@ textarea::placeholder {
   padding-left: 1em;
 }
 
+
+
 textarea {
   border: 1px solid #dfdfe0;
   border-radius: 5px;
