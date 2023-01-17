@@ -35,6 +35,8 @@ main {
   align-items: center;
 }
 
+/* ------------------HEADER--------------- */
+
 #toolbar {
   height: 10em;
   width: 100%;
@@ -51,6 +53,8 @@ main {
   margin-top: 10px;
   padding-right: 1em;
 }
+
+/* ------------------HOME PAGE--------------- */
 
 .headline {
   display: flex;
@@ -96,6 +100,8 @@ main {
   width: 980px;
   padding-top: 5em;
 }
+
+/* ------------------PROJECT--------------- */
 
 .title {
   font-size: 10em;
@@ -166,10 +172,9 @@ li.techtag {
 }
 
 #prdetailbutton:hover {
-  margin-left: 3.2em;
+  margin: 0 0 3em 3.2em;
   width: 33.6em;
-  height: 9em;
-  margin-bottom: 4.7em;
+  height: 8.6em;
   background-image: url(images/Button_prdetails_hovered.png);
 }
 
@@ -255,8 +260,53 @@ li::before {
   margin-left: 3.6em;
 }
 
-#contactbg {
+#contact-form-bg {
+  background-image: url(images/contact-bg.png);
+  background-repeat: no-repeat;
+  min-height: 120em;
+  min-width: 90%;
   margin-top: 15em;
+}
+
+#contact-form-txt {
+  padding-left: 3em;
+  color: #1a2236;
+}
+
+#form-header {
+  margin-bottom: 0;
+  padding-top: 2em;
+  font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 160px;
+}
+
+#form-message {
+  padding-top: -15rem;
+  font-family: Poppins-semibold, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.contact-form {
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 75%;
+  padding-left: 1em;
+  margin-top: 2em;
+}
+
+.st-input {
+  border: 1px solid #dfdfe0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 66em;
+  height: 8em;
+}
+
+#footer-bg {
   width: 100%;
   height: 300px;
   background-color: #1a2236;
@@ -266,4 +316,54 @@ li::before {
   padding-top: 7em;
   display: flex;
   justify-content: space-around;
+}
+
+input::placeholder {
+  font-size: 36px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  padding-left: 1em;
+}
+
+textarea::placeholder {
+  font-size: 36px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  padding-left: 1em;
+}
+
+textarea {
+  border: 1px solid #dfdfe0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 66em;
+  height: 32em;
+}
+
+.btn-submit {
+  margin-top: 1em;
+  font-size: 48px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #1a2236;
+  box-sizing: border-box;
+  width: 18.5em;
+  height: 3em;
+}
+
+.btn-submit:hover {
+  margin-top: 1em;
+  font-size: 48px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #b9b9b9;
+  color: #1a2236;
+  box-sizing: border-box;
+  width: 18.5em;
+  height: 3em;
 }
