@@ -142,10 +142,9 @@ main {
 }
 
 ul.techtags {
-  display: flex;
-  justify-content: space-between;
+  float: left;
   list-style-type: none;
-  width: 65%;
+  width: 90%;
   margin: -3.5em 0 1em 2em;
   padding: 0;
   height: 4em;
