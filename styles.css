@@ -283,9 +283,9 @@ li::before {
 
 #form-message {
   padding-top: -15rem;
-  font-family: Poppins-semibold, Arial, Helvetica, sans-serif;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .contact-form {
@@ -302,8 +302,12 @@ li::before {
   border: 1px solid #dfdfe0;
   border-radius: 5px;
   box-sizing: border-box;
-  width: 66em;
-  height: 8em;
+  width: 25em;
+  height: 4em;
+  font-size: 35px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  color: #1a2236;
+  padding-left: 1em;
 }
 
 #footer-bg {
@@ -322,22 +326,27 @@ input::placeholder {
   font-size: 36px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 400;
-  padding-left: 1em;
+  color: #7d7c84;
 }
 
 textarea::placeholder {
   font-size: 36px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 400;
-  padding-left: 1em;
+  color: #7d7c84;
 }
 
 textarea {
   border: 1px solid #dfdfe0;
   border-radius: 5px;
   box-sizing: border-box;
-  width: 66em;
-  height: 32em;
+  width: 33.7em;
+  height: 14em;
+  font-size: 26px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  color: #1a2236;
+  padding-left: 1em;
+  padding-top: 0.75em;
 }
 
 .btn-submit {
@@ -359,9 +368,9 @@ textarea {
   font-size: 48px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
-  border: 1px solid #fff;
+  border: 1px solid #1a2236;
   border-radius: 5px;
-  background-color: #b9b9b9;
+  background-color: #fff;
   color: #1a2236;
   box-sizing: border-box;
   width: 18.5em;
