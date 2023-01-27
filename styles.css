@@ -691,7 +691,7 @@ textarea {
     color: #1a2236;
     line-height: 21px;
   }
-  
+
   #collab_btn:enabled {
     margin: 22px auto auto 0;
     width: 254px;
@@ -702,13 +702,13 @@ textarea {
     font-weight: 500;
     font-family: Poppins, Arial, Helvetica, sans-serif;
   }
-  
+
   #collab_btn:hover {
     background-color: white;
     color: #1a2236;
     border: 2px solid #1a2236;
   }
-  
+
   #home_bg_cont {
     margin-top: 8px;
     margin-right: 0;
@@ -737,7 +737,7 @@ textarea {
     font-weight: 400;
     font-size: 110px;
     line-height: 100%;
-    color: #1A2236;
+    color: #1a2236;
     transform: rotate(-90deg);
   }
 
@@ -758,7 +758,7 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+
   #pr01 {
     width: 960px;
     height: 558px;
@@ -768,7 +768,7 @@ textarea {
     margin-left: auto;
   }
 
-  #pr01img{
+  #pr01img {
     background-image: url("images/pr01img.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -796,7 +796,7 @@ textarea {
     margin-left: auto;
   }
 
-  #pr06img{
+  #pr06img {
     background-image: url("images/pr06img.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -813,7 +813,7 @@ textarea {
     margin-left: auto;
   }
 
-  #pr05img{
+  #pr05img {
     background-image: url("images/pr05img.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -830,7 +830,7 @@ textarea {
     margin-right: auto;
   }
 
-  #pr02img{
+  #pr02img {
     background-image: url("images/pr02img.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -847,7 +847,7 @@ textarea {
     margin-right: auto;
   }
 
-  #pr03img{
+  #pr03img {
     background-image: url("images/pr03img.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -880,7 +880,7 @@ textarea {
     margin-right: 185px;
   }
 
-  #pr04img{
+  #pr04img {
     background-image: url("images/pr04img.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -919,7 +919,7 @@ textarea {
     font-weight: 400;
     font-size: 110px;
     line-height: 100%;
-    color: #1A2236;
+    color: #1a2236;
     margin-left: 0;
     margin-right: auto;
   }
@@ -955,7 +955,7 @@ textarea {
     margin-right: auto;
   }
 
-  #ic_dl{
+  #ic_dl {
     background-image: url("images/ic_dl.png");
     background-repeat: no-repeat;
     width: 25px;
@@ -1037,7 +1037,7 @@ textarea {
     flex-direction: column;
     align-items: center;
   }
-  
+
   #input_cont {
     width: 550px;
     display: flex;
@@ -1050,7 +1050,7 @@ textarea {
     height: 65px;
     word-wrap: break-word;
   }
-  
+
   #form-header {
     padding-left: 0;
     padding-top: 105px;
@@ -1213,5 +1213,6 @@ textarea {
     justify-content: space-between;
     padding-left: 5%;
     padding-top: 10px;
-  }  
+  }
+
 }
