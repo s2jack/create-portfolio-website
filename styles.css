@@ -82,7 +82,7 @@ main {
   font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
   font-size: 50px;
   color: #1a2236;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   line-height: 50px;
 }
 
@@ -103,8 +103,7 @@ main {
 }
 
 #collab_btn:enabled {
-  margin-top: 22px;
-  margin: 0 auto;
+  margin: 22 auto 0 auto;
   width: 288px;
   height: 50px;
   background-color: #1a2236;
@@ -130,9 +129,11 @@ main {
 }
 
 /* ------------------PROJECTS--------------- */
+
 #pr_bg_01 {
   display: none;
 }
+
 #pr_title {
   position: absolute;
   width: 181px;
@@ -143,7 +144,7 @@ main {
   font-style: normal;
   font-size: 50px;
   line-height: 100%;
-  color: #1A2236;
+  color: #1a2236;
 }
 
 #project_sec {
@@ -196,7 +197,7 @@ main {
   flex-direction: column;
 }
 
-#pr01img{
+#pr01img {
   background-image: url("images/pr01img.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -204,7 +205,7 @@ main {
   height: 50%;
 }
 
-#pr02img{
+#pr02img {
   background-image: url("images/pr02img.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -212,7 +213,7 @@ main {
   height: 50%;
 }
 
-#pr03img{
+#pr03img {
   background-image: url("images/pr03img.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -220,7 +221,7 @@ main {
   height: 50%;
 }
 
-#pr04img{
+#pr04img {
   background-image: url("images/pr04img.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -228,7 +229,7 @@ main {
   height: 50%;
 }
 
-#pr05img{
+#pr05img {
   background-image: url("images/pr05img.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -236,7 +237,7 @@ main {
   height: 50%;
 }
 
-#pr06img{
+#pr06img {
   background-image: url("images/pr06img.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -308,7 +309,7 @@ main {
   margin-left: 20px;
 }
 
-#ic_arr{
+#ic_arr {
   background-image: url("images/Union.png");
   background-repeat: no-repeat;
   width: 21px;
@@ -317,6 +318,7 @@ main {
 }
 
 /* ------------------ABOUT--------------- */
+
 #ab_bg_01 {
   display: none;
 }
@@ -350,7 +352,7 @@ main {
   font-weight: 400;
   font-size: 50px;
   line-height: 100%;
-  color: #1A2236;
+  color: #1a2236;
   margin-left: 5%;
   margin-right: auto;
 }
@@ -383,7 +385,7 @@ main {
   gap: 10px;
 }
 
-#ic_dl{
+#ic_dl {
   background-image: url("images/ic_dl.png");
   background-repeat: no-repeat;
   width: 25px;
@@ -462,7 +464,7 @@ li::before {
   width: 90%;
   height: 65px;
   text-overflow: clip;
-  text-align:inherit;
+  text-align: inherit;
 }
 
 #form-header {
@@ -627,11 +629,12 @@ textarea {
   padding-top: 10px;
 }
 
-
 /* ------------------DESKTOP VERSION--------------- */
 
 @media screen and (min-width: 768px) {
-  #menubutton, #shape01, #short-message {
+  #menubutton,
+  #shape01,
+  #short-message {
     display: none;
   }
 
@@ -662,24 +665,24 @@ textarea {
     gap: 45px;
     margin-left: 160px;
   }
-  
+
   #name {
     margin-top: 0;
     margin-left: 0;
     font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
     font-size: 110px;
     color: #1a2236;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     line-height: 110px;
   }
-  
+
   #message_cont {
     width: 485px;
     height: 105px;
     word-wrap: break-word;
     margin-left: 0;
   }
-  
+
   #message {
     margin: 0;
     font-size: 14px;
@@ -690,8 +693,7 @@ textarea {
   }
   
   #collab_btn:enabled {
-    margin-top: 22px;
-    margin: 0 auto auto 0;
+    margin: 22px auto auto 0;
     width: 254px;
     height: 74px;
     background-color: #1a2236;
@@ -908,7 +910,7 @@ textarea {
     margin-bottom: auto;
     padding-left: 25px;
   }
-  
+
   #ab_title {
     width: 295px;
     height: 110px;
@@ -921,13 +923,13 @@ textarea {
     margin-left: 0;
     margin-right: auto;
   }
-  
+
   #bio_cont {
     width: 445px;
     height: 85px;
     word-break: break-all;
   }
-  
+
   #bio {
     margin: 0;
     font-size: 14px;
@@ -935,7 +937,7 @@ textarea {
     font-weight: 400;
     font-family: Poppins, Arial, Helvetica, sans-serif;
   }
-  
+
   #cv_btn {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -952,7 +954,7 @@ textarea {
     margin-left: 0;
     margin-right: auto;
   }
-  
+
   #ic_dl{
     background-image: url("images/ic_dl.png");
     background-repeat: no-repeat;
@@ -960,7 +962,7 @@ textarea {
     height: 25px;
     background-size: cover;
   }
-  
+
   #techskills {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -971,26 +973,26 @@ textarea {
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
   }
-  
+
   .techbox {
     background-repeat: no-repeat;
     width: 290px;
     height: 290px;
     background-size: cover;
   }
-  
+
   #languages {
     background-image: url(images/blue_bg.png);
   }
-  
+
   #frameworks {
     background-image: url(images/red_bg.png);
   }
-  
+
   #skills {
     background-image: url(images/yellow_bg.png);
   }
-  
+
   #ab_bg_01 {
     display: block;
     background-image: url("images/image-geometry_6.png");
@@ -1004,12 +1006,12 @@ textarea {
     font-size: 20px;
     font-family: Poppins-extrabold, Arial, Helvetica, sans-serif;
   }
-  
+
   li::before {
     content: "";
     margin-right: -0.5rem;
   }
-  
+
   .article {
     color: white;
     font-size: 18px;
@@ -1029,7 +1031,7 @@ textarea {
     flex-direction: column;
     gap: 30px;
   }
-  
+
   #form_cont {
     display: flex;
     flex-direction: column;
@@ -1058,7 +1060,7 @@ textarea {
     margin: 0;
     text-align: center;
   }
-  
+
   #form-message {
     display: block;
     font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -1067,7 +1069,7 @@ textarea {
     width: 550px;
     height: 65px;
   }
-  
+
   .contact-form {
     font-size: 50px;
     display: flex;
@@ -1077,7 +1079,7 @@ textarea {
     margin-top: 65px;
     align-items: center;
   }
-  
+
   .st-input {
     border: 1px solid #dfdfe0;
     border-radius: 5px;
@@ -1090,21 +1092,21 @@ textarea {
     color: #1a2236;
     padding-left: 16px;
   }
-  
+
   input::placeholder {
     font-size: 16px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 400;
     color: #7d7c84;
   }
-  
+
   textarea::placeholder {
     font-size: 16px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 400;
     color: #7d7c84;
   }
-  
+
   textarea {
     border: 1px solid #dfdfe0;
     border-radius: 5px;
@@ -1118,7 +1120,7 @@ textarea {
     padding-left: 16px;
     padding-top: 16px;
   }
-  
+
   .btn-submit {
     margin-top: 16px;
     font-size: 18px;
@@ -1132,7 +1134,7 @@ textarea {
     width: 255px;
     height: 70px;
   }
-  
+
   .btn-submit:hover {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -1153,7 +1155,7 @@ textarea {
     align-items: center;
     gap: 620px;
   }
-  
+
   #get_cv {
     display: flex;
     gap: 16px;
@@ -1165,44 +1167,44 @@ textarea {
     padding-left: 16px;
     padding-top: 32px;
   }
-  
+
   #ic_get {
     background-image: url("images/ic_get.png");
     width: 22px;
     height: 22px;
   }
-  
+
   .ic_soc {
     width: 24px;
     height: 24px;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+
   #ic_stack {
     background-image: url("images/socialmedia-icons/ic_stackoverflow.png");
   }
-  
+
   #ic_git {
     background-image: url("images/socialmedia-icons/ic_github.png");
   }
-  
+
   #ic_twt {
     background-image: url("images/socialmedia-icons/ic_twitter.png");
   }
-  
+
   #ic_in {
     background-image: url("images/socialmedia-icons/ic_linkedin.png");
   }
-  
+
   #ic_med {
     background-image: url("images/socialmedia-icons/ic_medium.png");
   }
-  
+
   #ic_angel {
     background-image: url("images/socialmedia-icons/ic_angellist.png");
   }
-  
+
   #socialicons {
     width: 225px;
     height: 25px;
