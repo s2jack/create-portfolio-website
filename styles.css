@@ -649,12 +649,17 @@ textarea {
     border: 1px solid #dddfe6;
   }
 
-  #desk_menu > a {
+  #desk_menu .menu_item {
     text-decoration: none;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #1a2236;
+  }
+
+  .menu_item:hover {
+    transform: scale(1.2);
+    transition: ease-out 0.5s;
   }
 
   .headline {
