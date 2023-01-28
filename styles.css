@@ -1185,6 +1185,11 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  
+  .ic_soc:hover {
+    transform: scale(1.2);
+    transition: ease-out 0.5s;
+  }
 
   #ic_stack {
     background-image: url("images/socialmedia-icons/ic_stackoverflow.png");
