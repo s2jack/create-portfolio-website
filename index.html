@@ -1,162 +1,236 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selcuk Guler's Personal Portfolio website</title>
   </head>
   <body>
     <main>
       <!----------------------- HEADER -------------------------->
         <header id="toolbar">
-          <a href="index2.html" id="logolink">
-            <img id="shape01"src="images/image_geometry_1.png" width="360" height="240">
+          <a href="index.html" id="logolink">
+            <div id="shape01"></div>
           </a>
-          <nav id="icmenu">
-            <img id="menubutton"src="images/ic_menu.png" width="90" height="63">
+          <nav id="menu">
+            <div id="menubutton"></div>
+            <div id="desk_menu">
+              <a href="#home_sec">Hello</a>
+              <a href="#project_sec">Portfolio</a>
+              <a href="#about_sec">About</a>
+              <a href="#contact_sec">Contact</a>
+            </div>
           </nav>
         </header>
       <!----------------------- HOME PAGE -------------------------->
-      <section>
+      <section id="home_sec">
         <div class="headline">
           <h1 id="name" class="text">
-            Mehmet<br>
-            Selcuk Guler
+            Selcuk<br>
+            Guler
           </h1>
-          <p id="message" class="text">
-            Hello! I am a software developer! I can<br> 
-            help you build a product, feature or<br> 
-            website. Taka a look of my works.<br>
-            If you like what you see and have a<br> 
-            project you need coded, don't hesitate<br> 
-            and contact me.
-          </p>
-            <button id="button" type="button">Start collaboration</button>
+          <div id="message_cont">
+            <p id="message" class="text">
+              Hello! I am a software developer! I can
+              help you build a product, feature or 
+              website. Take a look of my works.
+              <br><br>
+              If you like what you see and have a 
+              project you need coded, don't hesitate 
+              and contact me.
+            </p>
+          </div>
+            <button id="collab_btn" type="button">Start collaboration</button>
+        </div>
+        <div id="home_bg_cont">
+          <div id="home_bg">
         </div>
       </section>
-      <div>
-        <img id="shape02" src="images/image_geometry_2.png" >
-      </div>
-    </main>
     <!----------------------- PROJECTS & WORKS PAGE --------------------------> 
-    <h2 class="title">
+    <h2 class="title" id="pr_title">
       Projects
     </h2>
-    <section id="projects">
+    <section id="project_sec">
+      <div id="pr_bg_01"></div>
       <div id="pr01">
-        <img id="pr01img" src="images/pr01img.png">
+        <div id="pr01img"></div>
         <div class="projectinfo" id="pr_info_01">
-          <div class="projectname"><h2>Project name goes here</h2></div>
-          <div>
+          <div class="projectname">Project name goes here</div>
+          <div id="tech_cont">
             <ul class="techtags">
               <li class="techtag">HTML</li>
               <li class="techtag">CSS</li>
               <li class="techtag">Javascript</li>
             </ul>
           </div>
-          <div type="image" id="prdetailbutton"></div>
+          <button id="pr_btn" type="button">See this project<span><div id="ic_arr"></div></span></button>
         </div>
-        <div id="pr02">
-          <img id="pr02img" src="images/pr02img.png">
-          <div class="projectinfo" id="pr_info_03">
-            <div class="projectname"><h2>Project name goes here</h2></div>
-            <div>
-              <ul class="techtags">
-                <li class="techtag">HTML</li>
-                <li class="techtag">CSS</li>
-                <li class="techtag">Javascript</li>
-              </ul>
-            </div>
-            <div type="image" id="prdetailbutton"></div>
-          </div>
-          <div id="pr03">
-            <img id="pr03img" src="images/pr03img.png">
-            <div class="projectinfo" id="pr_info_03">
-              <div class="projectname"><h2>Project name goes here</h2></div>
-              <div>
-                <ul class="techtags">
-                  <li class="techtag">HTML</li>
-                  <li class="techtag">CSS</li>
-                  <li class="techtag">Javascript</li>
-                </ul>
-              </div>
-              <div type="image" id="prdetailbutton"></div>
-            </div>
       </div>
+      <div id="pr_bg_02"></div>
+      <div id="pr02">
+        <div id="pr02img"></div>
+        <div class="projectinfo" id="pr_info_02">
+          <div class="projectname">Project name goes here</div>
+          <div id="tech_cont">
+            <ul class="techtags">
+              <li class="techtag">HTML</li>
+              <li class="techtag">CSS</li>
+              <li class="techtag">Javascript</li>
+            </ul>
+          </div>
+          <button id="pr_btn" type="button">See this project<span><div id="ic_arr"></div></span></button>
+        </div>
+      </div>
+      <div id="pr03">
+        <div id="pr03img"></div>
+        <div class="projectinfo" id="pr_info_03">
+          <div class="projectname">Project name goes here</div>
+          <div id="tech_cont">
+            <ul class="techtags">
+              <li class="techtag">HTML</li>
+              <li class="techtag">CSS</li>
+              <li class="techtag">Javascript</li>
+            </ul>
+          </div>
+          <button id="pr_btn" type="button">See this project<span><div id="ic_arr"></div></span></button>
+        </div>
+      </div>
+      <div id="pr04">
+        <div id="pr04img"></div>
+        <div class="projectinfo" id="pr_info_04">
+          <div class="projectname">Project name goes here</div>
+          <div id="tech_cont">
+            <ul class="techtags">
+              <li class="techtag">HTML</li>
+              <li class="techtag">CSS</li>
+              <li class="techtag">Javascript</li>
+            </ul>
+          </div>
+          <button id="pr_btn" type="button">See this project<span><div id="ic_arr"></div></span></button>
+        </div>
+      </div>
+      <div id="pr05">
+        <div id="pr05img"></div>
+        <div class="projectinfo" id="pr_info_05">
+          <div class="projectname">Project name goes here</div>
+          <div id="tech_cont">
+            <ul class="techtags">
+              <li class="techtag">HTML</li>
+              <li class="techtag">CSS</li>
+              <li class="techtag">Javascript</li>
+            </ul>
+          </div>
+          <button id="pr_btn" type="button">See this project<span><div id="ic_arr"></div></span></button>
+        </div>
+      </div>
+      <div id="pr06">
+        <div id="pr06img"></div>
+        <div class="projectinfo" id="pr_info_06">
+          <div class="projectname">Project name goes here</div>
+          <div id="tech_cont">
+            <ul class="techtags">
+              <li class="techtag">HTML</li>
+              <li class="techtag">CSS</li>
+              <li class="techtag">Javascript</li>
+            </ul>
+          </div>
+          <button id="pr_btn" type="button">See this project<span><div id="ic_arr"></div></span></button>
+        </div>
+      </div>
+      <div id="pr_bg_03"></div>
     </section>
     <!----------------------- ABOUT ME PAGE -------------------------->
-    <h2 class="title">
-      About
-    </h2>
-    <section id="about">
-    <p id="bio">
-      Lorem ipsum dolor sit amet, consectetur<br>
-      adipiscing elit, sed do eiusmod tempor<br>
-      incididunt ut labore et dolore magna<br>
-      aliqua. Ut enim ad minim veniam, quis<br>
-      nostrud exercitation ullamco laboris nisi<br>
-      ut aliquip ea eiusmod
-    </p>
-    <div type="image" id="cvbutton"></div>
-    <div id="techskills">
-      <div class="techbox" id="languages">
-        <h3 class="ulheader">Languages</h3>
-        <ul>
-          <li class="article">Javascript</li>
-          <li class="article">HTML</li>
-          <li class="article">CSS</li>
-        </ul>
+    <section id="about_sec">
+      <div id="ab_cont">
+        <h2 class="title" id="ab_title">
+          About
+        </h2>
+        <div id="bio_cont">
+          <p id="bio">
+          Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis
+          nostrud exercitation ullamco laboris nisi
+          ut aliquip ea eiusmod.
+          </p>
+        </div>
+        <button id="cv_btn" type="button">Get my CV<span><div id="ic_dl"></div></span></button>
       </div>
-      <div class="techbox" id="frameworks">
-        <h3 class="ulheader">Frameworks</h3>
-        <ul>
-          <li class="article">NaN</li>
-          <li class="article">NaN</li>
-         <li class="article">Nan</li>
-        </ul>
+      <div id="techskills">
+        <div class="techbox" id="languages">
+          <p class="ulheader">Languages</p>
+          <ul>
+            <li class="article">Javascript</li>
+            <li class="article">HTML</li>
+            <li class="article">CSS</li>
+          </ul>
+        </div>
+        <div class="techbox" id="frameworks">
+          <h3 class="ulheader">Frameworks</h3>
+          <ul>
+            <li class="article">NaN</li>
+            <li class="article">NaN</li>
+          <li class="article">Nan</li>
+          </ul>
+        </div>
+        <div class="techbox" id="skills">
+          <h3 class="ulheader">Skills</h3>
+          <ul>
+            <li class="article">Git</li>
+            <li class="article">GitHub</li>
+            <li class="article">Figma</li>
+          </ul>
+        </div>
+        <div class="techbox" id="ab_bg_01"></div>
       </div>
-      <div class="techbox" id="skills">
-        <h3 class="ulheader">Skills</h3>
-        <ul>
-          <li class="article">Git</li>
-          <li class="article">GitHub</li>
-          <li class="article">Figma</li>
-        </ul>
-      </div>
-    </div>
     </section>
     <!----------------------- CONTACT PAGE -------------------------->
-    <section class="contact-page">
+    <section class="contact_sec">
       <div>
         <div id="contact-form-bg">
-          <div id="contact-form-txt">
-            <h3 id="form-header">Get Started</h3>
-            <p id="form-message">Lorem ipsum dolor sit amet, consectetur<br>
-              adipiscing elit, sed do eiusmod tempor<br>
-              incididunt ut labore et dolore magna.</p>
+          <p id="form-header">Get Started</p>
+          <div id="form_cont">
+            <div id="form_txt_cont">
+              <p id="form-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                ex ea commodo consequat. </p>
+              <p id="short-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            </div>
+            <!-- modify this form HTML and place wherever you want your form -->
+            <form class="contact-form"
+            action="https://formspree.io/f/xeqwogzg"
+            method="POST">
+              <div id="input_cont">
+                <input class="st-input" type="text" name="name" placeholder="Your name" maxlength="30" required>
+                <input class="st-input" type="email" name="email" placeholder="Email address" required>
+              </div>
+              <textarea name="message" type="text" maxlength="500" placeholder="Enter your message here..." required></textarea>
+              <!-- your other form fields go here -->
+              <button class="btn-submit" type="submit">Start collaboration</button>
+            </form>
           </div>
-          <!-- modify this form HTML and place wherever you want your form -->
-          <form class="contact-form"
-          action="https://formspree.io/f/xeqwogzg"
-          method="POST">
-          <input class="st-input" type="text" name="name" placeholder="Your name" maxlength="30" required>
-          <input class="st-input" type="email" name="email" placeholder="Email address" required>
-          <textarea name="message" type="text" maxlength="500" placeholder="Enter your message here..." required></textarea>
-          <!-- your other form fields go here -->
-          <button class="btn-submit" type="submit">Start collaboration</button>
-          </form>
         </div>
       </div>
     <!----------------------- FOOTER -------------------------->
     </section>
-    <section id="footer">
+    <section id="footer_sec">
       <div id="footer-bg">
+        <div id="get_cv"><p>Get my Resume</p><div id="ic_get"></div></div>
         <div id="socialicons">
-          <a href="https://stackoverflow.com"><img src="images/socialmedia-icons/ic_stackoverflow.png" alt="stackoverflow-icon"></a>
-          <a href="https://wwww.github.com/s2jack"><img src="images/socialmedia-icons/ic_github.png" alt="github-icon"></a>
-          <a href="https://twitter.com/1stGuler"><img src="images/socialmedia-icons/ic_twitter.png" alt="twitter-icon"></a>
-          <a href="https://www.linkedin.com/in/selcuk-guler/"><img src="images/socialmedia-icons/ic_linkedin.png" alt="linkedin-icon"></a>
-          <a href="https://medium.com/"><img src="images/socialmedia-icons/ic_medium.png" alt="medium-icon"></a>
-          <a href="https://www.angellist.com/"><img src="images/socialmedia-icons/ic_angellist.png" alt="angellist-icon"></a>
+          <a href="https://stackoverflow.com"><div class="ic_soc" id="ic_stack"></div></a>
+          <a href="https://wwww.github.com/s2jack"><div class="ic_soc" id="ic_git"></div></a>
+          <a href="https://twitter.com/1stGuler"><div class="ic_soc" id="ic_twt"></div></a>
+          <a href="https://www.linkedin.com/in/selcuk-guler/"><div class="ic_soc" id="ic_in"></div></a>
+          <a href="https://medium.com/"><div class="ic_soc" id="ic_med"></div></a>
+          <a href="https://www.angellist.com/"><div class="ic_soc" id="ic_angel"></div></a>
         </div>
       </div>
     </section>
+  </main>
   </body>
 </html>
