@@ -52,7 +52,7 @@ This project only works client side right now.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> There is no any demo.
+> You can <a href="https://s2jack.github.io/">check it</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
