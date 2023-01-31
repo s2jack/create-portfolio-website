@@ -11,9 +11,7 @@
     <main>
       <!----------------------- HEADER -------------------------->
         <header id="toolbar">
-          <a href="index.html" id="logolink">
-            <div id="shape01"></div>
-          </a>
+          <div id="shape01"></div>
           <nav id="menu">
             <div id="menubutton"></div>
             <div id="desk_menu">
@@ -188,10 +186,10 @@
       </div>
     </section>
     <!----------------------- CONTACT PAGE -------------------------->
-    <section class="contact_sec">
+    <section id="contact_sec">
       <div>
         <div id="contact-form-bg">
-          <p id="form-header">Get Started</p>
+          <h2 id="form-header">Get Started</h2>
           <div id="form_cont">
             <div id="form_txt_cont">
               <p id="form-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -206,10 +204,10 @@
             action="https://formspree.io/f/xeqwogzg"
             method="POST">
               <div id="input_cont">
-                <input class="st-input" type="text" name="name" placeholder="Your name" maxlength="30" required>
-                <input class="st-input" type="email" name="email" placeholder="Email address" required>
-              </div>
-              <textarea name="message" type="text" maxlength="500" placeholder="Enter your message here..." required></textarea>
+                <label id="name_inp">Your name<input class="st-input" type="text" name="name" placeholder="Your name" maxlength="30" required></label>
+                <label id="email_inp">Your email<input class="st-input" type="email" name="email" placeholder="Email address" required></label>
+              </div> 
+              <label id="message_inp">Your message<textarea name="message" type="text" maxlength="500" placeholder="Enter your message here..." required></textarea></label>
               <!-- your other form fields go here -->
               <button class="btn-submit" type="submit">Start collaboration</button>
             </form>
@@ -222,12 +220,12 @@
       <div id="footer-bg">
         <div id="get_cv"><p>Get my Resume</p><div id="ic_get"></div></div>
         <div id="socialicons">
-          <a href="https://stackoverflow.com"><div class="ic_soc" id="ic_stack"></div></a>
-          <a href="https://wwww.github.com/s2jack"><div class="ic_soc" id="ic_git"></div></a>
-          <a href="https://twitter.com/1stGuler"><div class="ic_soc" id="ic_twt"></div></a>
-          <a href="https://www.linkedin.com/in/selcuk-guler/"><div class="ic_soc" id="ic_in"></div></a>
-          <a href="https://medium.com/"><div class="ic_soc" id="ic_med"></div></a>
-          <a href="https://www.angellist.com/"><div class="ic_soc" id="ic_angel"></div></a>
+          <a class="link" href="https://stackoverflow.com">Stackoverflow<div class="ic_soc" id="ic_stack"></div></a>
+          <a class="link" href="https://wwww.github.com/s2jack">Github<div class="ic_soc" id="ic_git"></div></a>
+          <a class="link" href="https://twitter.com/1stGuler">Twitter<div class="ic_soc" id="ic_twt"></div></a>
+          <a class="link" href="https://www.linkedin.com/in/selcuk-guler/">Linkedin<div class="ic_soc" id="ic_in"></div></a>
+          <a class="link" href="https://medium.com/">medium<div class="ic_soc" id="ic_med"></div></a>
+          <a class="link" href="https://www.angellist.com/">Angellist<div class="ic_soc" id="ic_angel"></div></a>
         </div>
       </div>
     </section>
