@@ -1084,8 +1084,9 @@ textarea {
     margin-top: 65px;
     align-items: center;
   }
-  
-  #name_inp, #email_inp {
+
+  #name_inp,
+  #email_inp {
     width: 45%;
     height: 60px;
   }
