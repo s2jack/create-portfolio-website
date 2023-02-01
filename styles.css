@@ -23,6 +23,11 @@
   src: url(fonts/Poppins-SemiBold.ttf);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html body {
   margin: 0;
   padding: 0;
@@ -136,6 +141,7 @@ main {
 
 #pr_title {
   position: absolute;
+  margin-top: 36px;
   width: 181px;
   height: 50px;
   left: 16px;
@@ -256,12 +262,15 @@ main {
 }
 
 .projectname {
+  height: 25px;
+  padding-left: 20px;
+}
+
+.projectname h3 {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: 300;
   color: #fff;
-  height: 25px;
-  padding-left: 20px;
 }
 
 #tech_cont {
@@ -439,7 +448,7 @@ li::before {
   color: white;
   font-size: 18px;
   font-family: Poppins-semibold, Arial, Helvetica, sans-serif;
-  margin-left: 30px;
+  margin-left: 70px;
   padding-top: 11px;
 }
 
@@ -1021,7 +1030,7 @@ textarea {
     color: white;
     font-size: 18px;
     font-family: Poppins-semibold, Arial, Helvetica, sans-serif;
-    margin-left: 30px;
+    margin-left: 70px;
     padding-top: 11px;
   }
 
@@ -1079,18 +1088,28 @@ textarea {
     font-size: 50px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     width: 550px;
     margin-top: 65px;
-    align-items: center;
+  }
+
+  #name_inp,
+  #email_inp {
+    width: 90%;
+    height: 60px;
+  }
+
+  #message_inp {
+    width: 95%;
+    height: 140px;
   }
 
   .st-input {
     border: 1px solid #dfdfe0;
     border-radius: 5px;
     box-sizing: border-box;
-    width: 45%;
-    height: 60px;
+    width: 100%;
+    height: 100%;
     font-size: 14px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -1117,7 +1136,7 @@ textarea {
     border-radius: 5px;
     box-sizing: border-box;
     width: 100%;
-    height: 140px;
+    height: 100%;
     font-size: 16px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -1128,6 +1147,7 @@ textarea {
 
   .btn-submit {
     margin-top: 16px;
+    margin-left: 25%;
     font-size: 18px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -1213,6 +1233,13 @@ textarea {
 
   #ic_angel {
     background-image: url("images/socialmedia-icons/ic_angellist.png");
+  }
+
+  .link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
   }
 
   #socialicons {
