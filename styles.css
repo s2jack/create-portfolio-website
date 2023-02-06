@@ -66,12 +66,30 @@ main {
 }
 
 #mobile_menu {
-  height: 100vh;
+  height: 568px;
   width: 100vw;
-  background-color: #7d7c84;
   display: none;
   flex-direction: column;
   justify-content: space-between;
+}
+
+#mobile_menu_items {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#mobile_menu_items a {
+  text-decoration: none;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 300%;
+  text-align: center;
+  color: #000000;
 }
 
 #mob_menu_top_img {
@@ -88,6 +106,7 @@ main {
   background-repeat: no-repeat;
   width: 320px;
   height: 150px;
+  margin-left: 5%;
 }
 
 #close_icon {
@@ -119,7 +138,7 @@ main {
 #name {
   margin-top: 0;
   margin-left: 16px;
-  font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
+  font-family: Playfair-Display-Font, "Times New Roman", Times, serif;
   font-size: 50px;
   color: #1a2236;
   margin-bottom: 0;
@@ -180,7 +199,7 @@ main {
   height: 50px;
   left: 16px;
   top: 652px;
-  font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
+  font-family: Playfair-Display-Font, "Times New Roman", Times, serif;
   font-style: normal;
   font-size: 50px;
   line-height: 100%;
@@ -387,7 +406,7 @@ main {
   width: 134px;
   height: 50px;
   margin: 0;
-  font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
+  font-family: Playfair-Display-Font, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
@@ -510,7 +529,7 @@ li::before {
 #form-header {
   padding-left: 5%;
   padding-top: 105px;
-  font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
+  font-family: Playfair-Display-Font, "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 50px;
   margin: 0;
@@ -715,7 +734,7 @@ textarea {
   #name {
     margin-top: 0;
     margin-left: 0;
-    font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
+    font-family: Playfair-Display-Font, "Times New Roman", Times, serif;
     font-size: 110px;
     color: #1a2236;
     margin-bottom: 0;
@@ -775,7 +794,7 @@ textarea {
   }
 
   #pr_title {
-    font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
+    font-family: Playfair-Display-Font, "Times New Roman", Times, serif;
     position: absolute;
     width: 398px;
     height: 110px;
@@ -960,7 +979,7 @@ textarea {
   #ab_title {
     width: 295px;
     height: 110px;
-    font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
+    font-family: Playfair-Display-Font, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 400;
     font-size: 110px;
@@ -1100,7 +1119,7 @@ textarea {
   #form-header {
     padding-left: 0;
     padding-top: 105px;
-    font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
+    font-family: Playfair-Display-Font, "Times New Roman", Times, serif;
     font-weight: 400;
     font-size: 110px;
     margin: 0;
