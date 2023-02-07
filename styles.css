@@ -31,12 +31,12 @@ html body {
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: unset;
 }
 
 /* ------------------HEADER--------------- */
 
-#toolbar {
+#menubar {
   height: 74px;
   width: 100vw;
   display: flex;
@@ -65,6 +65,68 @@ main {
   margin-right: 16px;
 }
 
+#mobile_menu {
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  background-color: #fff;
+  width: 100vw;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#mobile_menu_items {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#mobile_menu_items a {
+  text-decoration: none;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 300%;
+  text-align: center;
+  color: #000;
+}
+
+#mob_menu_top_img {
+  background-image: url(images/img_mobile_menu_top.png);
+  width: 264px;
+  height: 114px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#mob_menu_bot_img {
+  background-image: url(images/img_mobile_menu_bot.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 150px;
+  margin-left: 5%;
+}
+
+#close_icon {
+  background-image: url(images/close_icon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+#mob_img_container {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* ------------------HOME PAGE--------------- */
 
 .headline {
@@ -79,7 +141,7 @@ main {
 #name {
   margin-top: 0;
   margin-left: 16px;
-  font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
+  font-family: Playfair-Display-Font, "Times New Roman", Times, serif;
   font-size: 50px;
   color: #1a2236;
   margin-bottom: 0;
@@ -135,12 +197,10 @@ main {
 }
 
 #pr_title {
-  position: absolute;
+  margin-left: 16px;
   width: 181px;
   height: 50px;
-  left: 16px;
-  top: 652px;
-  font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
+  font-family: Playfair-Display-Font, "Times New Roman", Times, serif;
   font-style: normal;
   font-size: 50px;
   line-height: 100%;
@@ -152,7 +212,7 @@ main {
   width: 100vw;
   height: 2460px;
   grid-template-rows: repeat(6, 1fr);
-  margin-top: 122px;
+  margin-top: 34px;
 }
 
 #pr01 {
@@ -163,35 +223,35 @@ main {
 }
 
 #pr02 {
-  width: 375px;
+  width: 100vw;
   grid-row: 2/3;
   display: flex;
   flex-direction: column;
 }
 
 #pr03 {
-  width: 375px;
+  width: 100vw;
   grid-row: 3/4;
   display: flex;
   flex-direction: column;
 }
 
 #pr04 {
-  width: 375px;
+  width: 100vw;
   grid-row: 4/5;
   display: flex;
   flex-direction: column;
 }
 
 #pr05 {
-  width: 375px;
+  width: 100vw;
   grid-row: 5/6;
   display: flex;
   flex-direction: column;
 }
 
 #pr06 {
-  width: 375px;
+  width: 100vw;
   grid-row: 6/7;
   display: flex;
   flex-direction: column;
@@ -279,7 +339,7 @@ main {
 
 .techtag {
   width: auto;
-  font-size: 16px;
+  font-size: 10.33px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-style: normal;
   float: left;
@@ -347,7 +407,7 @@ main {
   width: 134px;
   height: 50px;
   margin: 0;
-  font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
+  font-family: Playfair-Display-Font, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
@@ -470,7 +530,7 @@ li::before {
 #form-header {
   padding-left: 5%;
   padding-top: 105px;
-  font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
+  font-family: Playfair-Display-Font, "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 50px;
   margin: 0;
@@ -634,8 +694,13 @@ textarea {
 @media screen and (min-width: 768px) {
   #menubutton,
   #shape01,
-  #short-message {
+  #short-message,
+  #mobile_menu {
     display: none;
+  }
+
+  main {
+    align-items: center;
   }
 
   #desk_menu {
@@ -674,7 +739,7 @@ textarea {
   #name {
     margin-top: 0;
     margin-left: 0;
-    font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
+    font-family: Playfair-Display-Font, "Times New Roman", Times, serif;
     font-size: 110px;
     color: #1a2236;
     margin-bottom: 0;
@@ -734,7 +799,7 @@ textarea {
   }
 
   #pr_title {
-    font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
+    font-family: Playfair-Display-Font, "Times New Roman", Times, serif;
     position: absolute;
     width: 398px;
     height: 110px;
@@ -919,7 +984,7 @@ textarea {
   #ab_title {
     width: 295px;
     height: 110px;
-    font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
+    font-family: Playfair-Display-Font, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: 400;
     font-size: 110px;
@@ -1059,7 +1124,7 @@ textarea {
   #form-header {
     padding-left: 0;
     padding-top: 105px;
-    font-family: Playfair-Display-Font, 'Times New Roman', Times, serif;
+    font-family: Playfair-Display-Font, "Times New Roman", Times, serif;
     font-weight: 400;
     font-size: 110px;
     margin: 0;
