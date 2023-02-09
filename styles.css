@@ -1440,11 +1440,12 @@ textarea {
   }
 
   #btn_container {
+    width: 54%;
     display: flex;
     align-items: center;
     gap: 15px;
     flex-direction: row;
-    margin-left: 270px;
+    margin : 0 auto;
   }
 
   .detail_btn {
