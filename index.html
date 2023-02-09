@@ -40,12 +40,12 @@
       <!----------------------- HOME PAGE -------------------------->
       <section id="home_sec">
         <div class="headline">
-          <h1 id="name" class="text">
+          <h1 id="My_name" class="text">
             Selcuk<br>
             Guler
           </h1>
           <div id="message_cont">
-            <p id="message" class="text">
+            <p id="greetings_message" class="text">
               Hello! I am a software developer! I can
               help you build a product, feature or 
               website. Take a look of my works.
@@ -132,12 +132,16 @@
             action="https://formspree.io/f/xeqwogzg"
             method="POST">
               <div id="input_cont">
-                <input class="st-input" type="text" name="name" placeholder="Your name" maxlength="30" required>
-                <input class="st-input" type="email" name="email" placeholder="Email address" required>
+                <input class="st-input" type="text" name="name" id="name" placeholder="Your name" maxlength="30">
+                <input class="st-input" type="text" name="email" id="email" placeholder="Email address">
               </div>
-              <textarea name="message" type="text" maxlength="500" placeholder="Enter your message here..." required></textarea>
+              <textarea id="message" name="message" type="text" maxlength="500" placeholder="Enter your message here..."></textarea>
               <!-- your other form fields go here -->
-              <button class="btn-submit" type="submit">Start collaboration</button>
+              <span class="form-error form-error-text"></span>
+              <span class="name-error form-error-text"></span>
+              <span class="email-error form-error-text"></span>
+              <span class="message-error form-error-text"></span>
+              <input class="btn-submit" type="submit" value='Start collaboration'></input>
             </form>
           </div>
         </div>

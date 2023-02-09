@@ -139,7 +139,7 @@ main {
   margin-left: 0;
 }
 
-#name {
+#My_name {
   margin-top: 0;
   margin-left: 16px;
   font-family: Playfair-Display-Font, "Times New Roman", Times, serif;
@@ -156,7 +156,7 @@ main {
   margin-left: 16px;
 }
 
-#message {
+#greetings_message {
   margin: 0;
   font-size: 14px;
   font-weight: 400;
@@ -702,11 +702,20 @@ li::before {
 
 /* ------------------CONTACT FORM--------------- */
 
+.form-error-text {
+  color: red;
+  font-family: Poppins-semibold, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
 #contact-form-bg {
   background-image: url(images/contact-bg.png);
   background-repeat: no-repeat;
   width: 100vw;
-  height: 650px;
+  height: 678px;
   background-size: cover;
   margin-top: 50px;
 }
@@ -823,7 +832,7 @@ textarea {
 
 #footer-bg {
   width: 100vw;
-  height: 150px;
+  height: 105px;
   background-color: #1a2236;
 }
 
@@ -836,7 +845,6 @@ textarea {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   padding-left: 16px;
-  padding-top: 32px;
 }
 
 #ic_get {
@@ -933,7 +941,7 @@ textarea {
     margin-left: 160px;
   }
 
-  #name {
+  #My_name {
     margin-top: 0;
     margin-left: 0;
     font-family: Playfair-Display-Font, "Times New Roman", Times, serif;
@@ -950,7 +958,7 @@ textarea {
     margin-left: 0;
   }
 
-  #message {
+  #greetings_message {
     margin: 0;
     font-size: 14px;
     font-weight: 400;
@@ -1435,8 +1443,8 @@ textarea {
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
-    letter-spacing: 0em;
-    text-align: left ;
+    letter-spacing: 0;
+    text-align: left;
   }
 
   #btn_container {
@@ -1447,9 +1455,6 @@ textarea {
     flex-direction: row;
     margin: 0 auto;
   }
-
-
-
 
   .detail_btn {
     display: flex;
