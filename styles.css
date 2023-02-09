@@ -331,12 +331,12 @@ main {
   padding-left: 20px;
 }
 
-#tech_cont {
+.tech_cont {
   height: 25px;
   padding-left: 20px;
 }
 
-.techtags {
+.tech_cont ul {
   display: flex;
   margin: 0;
   padding: 0;
@@ -344,7 +344,7 @@ main {
   gap: 10px;
 }
 
-.techtag {
+.tech_cont ul li {
   width: auto;
   font-size: 10.33px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -353,7 +353,7 @@ main {
   display: block;
   color: #1a2236;
   text-align: center;
-  padding: 7px 25px 7px 33px;
+  padding: 3px 10px 3px 18px;
   text-decoration: none;
   background-color: #98dede;
   font-weight: 300;
@@ -393,7 +393,7 @@ main {
 
 #pr_popUp {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
@@ -402,7 +402,7 @@ main {
 }
 
 #pop_closeIcon {
-  z-index: 1;
+  z-index: 2;
   background-image: url("images/close_icon.png");
   width: 20px;
   height: 20px;
@@ -559,6 +559,20 @@ main {
   height: 22px;
   background-size: cover;
 }
+
+.detail_btn:hover {
+  background-color: #1a2236;
+  color: #fff;
+}
+
+#seeSource_btn:hover #seeSource_icon {
+  filter: none;
+}
+
+#seeLive_btn:hover #seeLive_icon {
+  filter: invert(0) sepia(0) saturate(0) hue-rotate(0) brightness(200%) contrast(100%);
+}
+
 /* ------------------ABOUT--------------- */
 
 #ab_bg_01 {
@@ -980,6 +994,8 @@ textarea {
     display: flex;
   }
 
+  /*------------- Project Section -------------*/
+  
   #pr_title {
     font-family: Playfair-Display-Font, "Times New Roman", Times, serif;
     position: absolute;
@@ -1034,6 +1050,51 @@ textarea {
     height: 100%;
   }
 
+  #pr01img:hover~#pr_info_01,
+  #pr_info_01:hover {
+    display: flex;
+  }
+
+  .projectinfo {
+    z-index: 1;
+  }
+
+  .pr_btn {
+    width: 215px;
+    height: 50px;
+  }
+
+  #pr_info_01 {
+    display: none;
+    height: 50%;
+    position: relative;
+    margin-top: -300px;
+    width: 100%;
+  }
+
+  #pr_info_01 .projectname {
+    font-size: 60px;
+    font-weight: 700;
+    height: auto;
+    padding-left: 60px;
+  }
+
+  #pr_info_01 .tech_cont {
+    height: 40px;
+    padding-left: 60px;
+  }
+
+  #pr_info_01 .tech_cont ul li {
+    height: 40px;
+    width: 135px;
+    font-size: 20px;
+    padding: 9px 0 0 5px;
+  }
+
+  #pr_btn_01 {
+    margin-left: 60px;
+  }
+
   #pr_bg_02 {
     display: block;
     margin-left: auto;
@@ -1062,6 +1123,24 @@ textarea {
     height: 100%;
   }
 
+  #pr_info_06 {
+    display: none;
+    z-index: 1;
+    height: 60%;
+    position: relative;
+    margin-top: -180px;
+    width: 100%;
+  }
+
+  #pr06img:hover~#pr_info_06,
+  #pr_info_06:hover {
+    display: flex;
+  }
+
+  #pr_info_06 button {
+    margin: 0 auto 0 20px;
+  }
+
   #pr05 {
     width: 465px;
     height: 270px;
@@ -1079,6 +1158,25 @@ textarea {
     height: 100%;
   }
 
+  #pr_info_05 {
+    display: none;
+    z-index: 1;
+    height: 60%;
+    position: relative;
+    margin-top: -180px;
+    width: 100%;
+  }
+
+  #pr05img:hover~#pr_info_05,
+  #pr_info_05:hover {
+    display: flex;
+  }
+
+  #pr_info_05 button {
+    margin: 0 auto 0 20px;
+  }
+
+
   #pr02 {
     width: 465px;
     height: 270px;
@@ -1094,6 +1192,23 @@ textarea {
     background-size: cover;
     width: 100%;
     height: 100%;
+  }
+
+  #pr_info_02 {
+    display: none;
+    height: 60%;
+    position: relative;
+    margin-top: -180px;
+    width: 100%;
+  }
+
+  #pr02img:hover~#pr_info_02,
+  #pr_info_02:hover {
+    display: flex;
+  }
+
+  #pr_info_02 button {
+    margin: 0 auto 0 20px;
   }
 
   #pr03 {
@@ -1113,6 +1228,32 @@ textarea {
     height: 100%;
   }
 
+  #pr03img:hover~#pr_info_03,
+  #pr_info_03:hover {
+    display: flex;
+  }
+
+  #pr_info_03 {
+    display: none;
+    height: 50%;
+    position: relative;
+    margin-top: -255px;
+    width: 100%;
+    gap: 24px;
+  }
+
+  #pr_info_03 .projectname {
+    font-size: 42px;
+  }
+
+  #pr_info_03 .tech_cont {
+    margin-top: 16px;
+  }
+
+  #pr_info_03 .tech_cont ul li {
+    font-size: 20px;
+  }
+
   #pr_bg_03 {
     display: block;
     margin-left: 0;
@@ -1125,7 +1266,8 @@ textarea {
     background-size: cover;
   }
 
-  .projectinfo {
+  #pr_info_05,
+  #pr_info_06 {
     display: none;
   }
 
@@ -1145,6 +1287,224 @@ textarea {
     width: 100%;
     height: 100%;
   }
+
+  #pr_info_04 {
+    display: none;
+    height: 60%;
+    position: relative;
+    margin-top: -180px;
+    width: 100%;
+  }
+
+  #pr04img:hover~#pr_info_04,
+  #pr_info_04:hover {
+    display: flex;
+  }
+
+  #pr_info_04 button {
+    margin: 0 auto 0 20px;
+  }
+
+  /* Pop Up Styles Desktop */
+
+  #pr_popUp {
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #1a2236;
+    top: 0;
+  }
+
+  #pop_closeIcon {
+    position: relative;
+    z-index: 2;
+    background-image: url("images/close_icon.png");
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    margin: 156px 140px auto auto;
+  }
+
+  #pr_popUp_items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 87%;
+    height: 1851px;
+    margin: -96px auto 70px auto;
+    background-color: #fff;
+
+  }
+
+  #pr_popUp_items h3 {
+    font-family: Poppins-extrabold, Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 60px auto auto 60px;
+  }
+
+  .tech_container ul {
+    display: flex;
+    gap: 10px;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-left: 60px;
+    margin-top: 0;
+  }
+
+  .tech_container ul li {
+    width: auto;
+    font-size: 16px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    float: left;
+    display: block;
+    color: #1a2236;
+    text-align: center;
+    padding: 5px 20px;
+    text-decoration: none;
+    background-color: #fff;
+    font-weight: 300;
+    border: 0.5px solid #1a2236;
+  }
+
+  .tech_container ul li::before {
+    margin-right: 0;
+  }
+
+  .image_viewer {
+    display: grid;
+    grid-template-rows: 80% 20%;
+    width: 90%;
+    height: 63.12vw;
+    margin: 0 auto;
+  }
+
+  .big_image {
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/pr02img.png");
+    background-size: cover;
+  }
+
+  .sm_image_grid {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+  }
+  .sImage {
+    background-image: url("images/pr02img.png");
+    background-size: cover;
+  }
+
+  .sImage:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+    border: 1px solid grey;
+  }
+
+  #sImage_01 {
+    grid-column: 1/2;
+  }
+
+  #sImage_02 {
+    grid-column: 2/3;
+  }
+
+  #sImage_03 {
+    grid-column: 3/4;
+  }
+
+  #sImage_04 {
+    grid-column: 4/5;
+  }
+
+  #popUp_description {
+    width: 54%;
+    height: 225px;
+    word-break: break-all;
+    margin: 18px auto;
+  }
+
+  #popUpText {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  #btn_container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row;
+    margin-left: 270px;
+  }
+
+  .detail_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+    height: 50px;
+    border: 1px solid #1a2236;
+    background-color: #fff;
+  }
+
+  .detail_btn:hover {
+    background-color: #1a2236;
+    color: #fff;
+  }
+
+  .btn_txt {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-left: 45px;
+  }
+
+  #seeLive_icon {
+    background-image: url("images/ic_get.png");
+    filter: invert(8%) sepia(18%) saturate(100%) hue-rotate(185deg) brightness(0%) contrast(88%);
+    width: 22px;
+    height: 22px;
+    background-size: cover;
+  }
+
+  #seeSource_icon {
+    background-image: url("images/socialmedia-icons/ic_github.png");
+    filter: invert(8%) sepia(18%) saturate(100%) hue-rotate(185deg) brightness(0%) contrast(88%);
+    width: 22px;
+    height: 22px;
+    background-size: cover;
+  }
+
+  #seeSource_btn:hover #seeSource_icon {
+    filter: none;
+  }
+
+  #seeLive_btn:hover #seeLive_icon {
+    filter: invert(0) sepia(0) saturate(0) hue-rotate(0) brightness(200%) contrast(100%);
+  }
+
+  /*---------------------- About Section ------------------*/
 
   #about_sec {
     width: 1160px;
