@@ -424,7 +424,7 @@ main {
   font-size: 20px;
   font-weight: 700;
   line-height: 16px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -454,6 +454,11 @@ main {
   border: 0.5px solid #1a2236;
 }
 
+li::before {
+  content: "";
+  margin-right: -0.5rem;
+}
+
 .tech_container ul li::before {
   margin-right: 0;
 }
@@ -479,6 +484,7 @@ main {
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
 }
+
 .sImage {
   background-image: url("images/pr02img.png");
   background-size: cover;
@@ -511,7 +517,7 @@ main {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
 }
 
@@ -537,7 +543,7 @@ main {
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -684,11 +690,6 @@ main {
   padding-top: 50px;
   font-size: 20px;
   font-family: Poppins-extrabold, Arial, Helvetica, sans-serif;
-}
-
-li::before {
-  content: "";
-  margin-right: -0.5rem;
 }
 
 .article {
@@ -994,8 +995,8 @@ textarea {
     display: flex;
   }
 
-  /*------------- Project Section -------------*/
-  
+  /* ------------- Project Section ------------- */
+
   #pr_title {
     font-family: Playfair-Display-Font, "Times New Roman", Times, serif;
     position: absolute;
@@ -1021,7 +1022,6 @@ textarea {
   #pr_container {
     display: block;
   }
-  
 
   #pr_bg_01 {
     display: block;
@@ -1050,8 +1050,16 @@ textarea {
     height: 100%;
   }
 
-  #pr01img:hover~#pr_info_01,
-  #pr_info_01:hover {
+  #pr_info_01 {
+    display: none;
+    height: 50%;
+    position: relative;
+    margin-top: -300px;
+    width: 100%;
+  }
+
+  #pr_info_01:hover,
+  #pr01img:hover ~ #pr_info_01 {
     display: flex;
   }
 
@@ -1064,19 +1072,27 @@ textarea {
     height: 50px;
   }
 
-  #pr_info_01 {
-    display: none;
-    height: 50%;
-    position: relative;
-    margin-top: -300px;
-    width: 100%;
-  }
-
   #pr_info_01 .projectname {
     font-size: 60px;
     font-weight: 700;
     height: auto;
     padding-left: 60px;
+  }
+
+  .tech_container ul li {
+    width: auto;
+    font-size: 16px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    float: left;
+    display: block;
+    color: #1a2236;
+    text-align: center;
+    padding: 5px 20px;
+    text-decoration: none;
+    background-color: #fff;
+    font-weight: 300;
+    border: 0.5px solid #1a2236;
   }
 
   #pr_info_01 .tech_cont {
@@ -1132,8 +1148,8 @@ textarea {
     width: 100%;
   }
 
-  #pr06img:hover~#pr_info_06,
-  #pr_info_06:hover {
+  #pr_info_06:hover,
+  #pr06img:hover ~ #pr_info_06 {
     display: flex;
   }
 
@@ -1167,15 +1183,14 @@ textarea {
     width: 100%;
   }
 
-  #pr05img:hover~#pr_info_05,
-  #pr_info_05:hover {
+  #pr_info_05:hover,
+  #pr05img:hover ~ #pr_info_05 {
     display: flex;
   }
 
   #pr_info_05 button {
     margin: 0 auto 0 20px;
   }
-
 
   #pr02 {
     width: 465px;
@@ -1202,8 +1217,8 @@ textarea {
     width: 100%;
   }
 
-  #pr02img:hover~#pr_info_02,
-  #pr_info_02:hover {
+  #pr_info_02:hover,
+  #pr02img:hover ~ #pr_info_02 {
     display: flex;
   }
 
@@ -1228,11 +1243,6 @@ textarea {
     height: 100%;
   }
 
-  #pr03img:hover~#pr_info_03,
-  #pr_info_03:hover {
-    display: flex;
-  }
-
   #pr_info_03 {
     display: none;
     height: 50%;
@@ -1240,6 +1250,11 @@ textarea {
     margin-top: -255px;
     width: 100%;
     gap: 24px;
+  }
+
+  #pr_info_03:hover,
+  #pr03img:hover ~ #pr_info_03 {
+    display: flex;
   }
 
   #pr_info_03 .projectname {
@@ -1264,11 +1279,6 @@ textarea {
     background-image: url("images/image-geometry_5.png");
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  #pr_info_05,
-  #pr_info_06 {
-    display: none;
   }
 
   #pr04 {
@@ -1296,8 +1306,8 @@ textarea {
     width: 100%;
   }
 
-  #pr04img:hover~#pr_info_04,
-  #pr_info_04:hover {
+  #pr_info_04:hover,
+  #pr04img:hover ~ #pr_info_04 {
     display: flex;
   }
 
@@ -1335,7 +1345,6 @@ textarea {
     height: 1851px;
     margin: -96px auto 70px auto;
     background-color: #fff;
-
   }
 
   #pr_popUp_items h3 {
@@ -1343,7 +1352,7 @@ textarea {
     font-size: 60px;
     font-weight: 700;
     line-height: 48px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -1358,22 +1367,6 @@ textarea {
     margin-block-end: 0;
     margin-left: 60px;
     margin-top: 0;
-  }
-
-  .tech_container ul li {
-    width: auto;
-    font-size: 16px;
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-style: normal;
-    float: left;
-    display: block;
-    color: #1a2236;
-    text-align: center;
-    padding: 5px 20px;
-    text-decoration: none;
-    background-color: #fff;
-    font-weight: 300;
-    border: 0.5px solid #1a2236;
   }
 
   .tech_container ul li::before {
@@ -1402,6 +1395,7 @@ textarea {
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
   }
+
   .sImage {
     background-image: url("images/pr02img.png");
     background-size: cover;
@@ -1441,7 +1435,7 @@ textarea {
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
   }
 
@@ -1473,7 +1467,7 @@ textarea {
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -1504,7 +1498,7 @@ textarea {
     filter: invert(0) sepia(0) saturate(0) hue-rotate(0) brightness(200%) contrast(100%);
   }
 
-  /*---------------------- About Section ------------------*/
+  /* ---------------------- About Section ------------------ */
 
   #about_sec {
     width: 1160px;
@@ -1623,11 +1617,6 @@ textarea {
     padding-top: 50px;
     font-size: 20px;
     font-family: Poppins-extrabold, Arial, Helvetica, sans-serif;
-  }
-
-  li::before {
-    content: "";
-    margin-right: -0.5rem;
   }
 
   .article {
