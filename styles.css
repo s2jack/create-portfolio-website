@@ -1435,8 +1435,8 @@ textarea {
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
-    letter-spacing: 0em;
-    text-align: left ;
+    letter-spacing: 0;
+    text-align: left;
   }
 
   #btn_container {
@@ -1447,10 +1447,7 @@ textarea {
     flex-direction: row;
     margin: 0 auto;
   }
-
-
-
-
+  
   .detail_btn {
     display: flex;
     align-items: center;
