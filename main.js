@@ -1,13 +1,16 @@
 /* eslint-disable linebreak-style */
 
+const body = document.getElementsByTagName('body')[0];
+const projectSection = document.querySelector('#project_sec');
+const homeSec = document.querySelector('#home_sec');
+
+/* -------------- Mobile Menu variable------------------*/
+
 const hamimage = document.querySelector('#menubutton');
 const shape01 = document.querySelector('#shape01');
 const mobileMenu = document.querySelector('#mobile_menu');
-const homeSec = document.querySelector('#home_sec');
 const crossImg = document.querySelector('#close_icon');
 const mobMenuItems = document.querySelectorAll('.mob_menu_item');
-const body = document.getElementsByTagName('body')[0];
-const projectSection = document.querySelector('#project_sec');
 
 const projectData = [
   {
@@ -74,6 +77,30 @@ const projectData = [
   },
 ];
 
+/* ------------ Mobile Menu Functions -------------- */
+
+const menuOpen = () => {
+  hamimage.style.display = 'none';
+  shape01.style.display = 'none';
+  mobileMenu.style.display = 'flex';
+  homeSec.style.visibility = 'hidden';
+};
+
+const menuClose = () => {
+  hamimage.style.display = 'flex';
+  shape01.style.display = 'flex';
+  mobileMenu.style.display = 'none';
+  homeSec.style.visibility = 'visible';
+};
+
+hamimage.addEventListener('click', menuOpen);
+crossImg.addEventListener('click', menuClose);
+mobMenuItems.forEach((item) => {
+  item.addEventListener('click', menuClose);
+});
+
+/* ------------ Project PopUp Window Functions -------------- */
+
 const addCardName = (prData) => {
   const title = document.createElement('h3');
   title.textContent = prData[0].title;
@@ -88,20 +115,6 @@ const addTechsList = (prData) => {
     modelTechsList.appendChild(modelTech);
   }
   return modelTechsList;
-};
-
-const menuOpen = () => {
-  hamimage.style.display = 'none';
-  shape01.style.display = 'none';
-  mobileMenu.style.display = 'flex';
-  homeSec.style.visibility = 'hidden';
-};
-
-const menuClose = () => {
-  hamimage.style.display = 'flex';
-  shape01.style.display = 'flex';
-  mobileMenu.style.display = 'none';
-  homeSec.style.visibility = 'visible';
 };
 
 const popUpClose = () => {
@@ -397,10 +410,6 @@ const loadProjectSection = () => {
   pr06Button.addEventListener('click', popUpOpen);
 };
 
-loadProjectSection();
+/* ---------- Start Functions ------------*/
 
-hamimage.addEventListener('click', menuOpen);
-crossImg.addEventListener('click', menuClose);
-mobMenuItems.forEach((item) => {
-  item.addEventListener('click', menuClose);
-});
+loadProjectSection();
