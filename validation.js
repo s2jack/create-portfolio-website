@@ -12,7 +12,27 @@ const formErrorMessage = document.querySelector('.form-error');
 const nameErrorMessage = document.querySelector('.name-error');
 const messageErrorMessage = document.querySelector('.message-error');
 
-/* ---------- Contact Form -------------- */
+
+/* ------------------ Store Data -------------- */
+
+let formDB = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+const getFormInputs = (data) => {
+  nameInput.value = data.name;
+  emailInput.value = data.email;
+  msgInput.value = data.message;
+};
+
+if(localStorage.getItem('formDB')) {
+  formDB = JSON.parse(localStorage.getItem('formDB'));
+  getFormInputs(formDB);
+};
+
+/* ---------- Validation Contact Form -------------- */
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -53,4 +73,19 @@ form.addEventListener('submit', (event) => {
       messageErrorMessage.style.display = 'none';
     }
   }
+});
+
+nameInput.addEventListener('input', () => {
+  formDB.name = nameInput.value;
+  localStorage.setItem('formDB', JSON.stringify(formDB));
+});
+
+emailInput.addEventListener('input', () => {
+  formDB.email = emailInput.value;
+  localStorage.setItem('formDB', JSON.stringify(formDB));
+});
+
+msgInput.addEventListener('input', () => {
+  formDB.message = msgInput.value;
+  localStorage.setItem('formDB', JSON.stringify(formDB));
 });
