@@ -30,7 +30,7 @@ form.addEventListener('submit', (event) => {
       emailErrorMessage.textContent = 'email is required';
       emailErrorMessage.style.display = 'block';
     } else if (!emailRegex.test(emailInput.value)) {
-      emailErrorMessage.textContent = 'the email input should follow this format : xyz@exe.com';
+      emailErrorMessage.textContent = 'the email input is not valid! Please follow this format: user@mail.com';
       emailErrorMessage.style.display = 'block';
     } else {
       emailErrorMessage.textContent = '';
