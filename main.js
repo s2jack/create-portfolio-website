@@ -12,7 +12,6 @@ const mobileMenu = document.querySelector('#mobile_menu');
 const crossImg = document.querySelector('#close_icon');
 const mobMenuItems = document.querySelectorAll('.mob_menu_item');
 
-
 const projectData = [
   {
     title: 'Project name goes here',
