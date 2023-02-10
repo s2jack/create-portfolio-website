@@ -754,7 +754,7 @@ li::before {
   display: none;
 }
 
-.contact-form {
+#contact-form {
   font-size: 50px;
   display: flex;
   flex-direction: column;
@@ -1686,7 +1686,7 @@ textarea {
     height: 65px;
   }
 
-  .contact-form {
+  #contact-form {
     font-size: 50px;
     display: flex;
     flex-direction: column;
