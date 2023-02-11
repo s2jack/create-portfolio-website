@@ -404,3 +404,6 @@ crossImg.addEventListener('click', menuClose);
 mobMenuItems.forEach((item) => {
   item.addEventListener('click', menuClose);
 });
+
+console.log(nameErrorMessage);
+console.log(emailInput.value);
